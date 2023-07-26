@@ -5,6 +5,7 @@ let circleArea = document.querySelector(".circleArea");
 let circle = document.querySelector(".circle");
 let works = document.querySelector(".works");
 let website = document.querySelector(".website");
+let designList = document.querySelectorAll(".designList li");
 let helloTxt = "안녕하세요";
 let nameTxt = "유주현입니다";
 let i = 0;
@@ -17,6 +18,11 @@ let circleWidth = () => {
   circle.style.height = circle.offsetWidth + "px"
 }
 
+let listHeight = () => {
+  for(let k = 0; k < designList.length; k++){
+    designList[k].style.height = designList[k].offsetWidth + "px"
+  }
+}
 
 let worksHeight = () => {
   if (window.innerWidth >= 768) {
@@ -53,11 +59,13 @@ let boxWidth = () => {
 
 circleWidth()
 worksHeight()
+listHeight()
 
 window.addEventListener("resize",()=>{
   circleWidth()
   worksHeight()
   boxWidth()
+  listHeight()
 })
 
 

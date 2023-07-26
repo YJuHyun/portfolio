@@ -78,9 +78,7 @@ h3{
   padding: 4px 12px;
   background-color: #F6FA70;
 }
-.profile,
-.works,
-.career{
+section section{
   text-align: center;
   display: flex;
   flex-wrap: wrap;
@@ -223,6 +221,7 @@ h5{
   align-items: center;
   background-color: rgba(27, 27, 27, .0);
   transition-duration: 0.3s;
+  flex-wrap: wrap;
 }
 .dim:hover{
   opacity: 1;
@@ -320,6 +319,36 @@ h5{
 .careerTxt ul li p{
   width: 72.96137339%;
   font-weight: 600;
+}
+.design{
+  padding-bottom: 120px;
+}
+.designList{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.designList li{
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+.designList .dim{
+  flex-direction: column;
+}
+.designList li img{
+  height: 100%;
+}
+.designList li h6{
+  color: #fff;
+  width: 100%;
+  margin-bottom: 8px;
+}
+.designList li p{
+  color: #fff;
 }
 @media all and (max-width:1024px){
   .circleArea,
