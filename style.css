@@ -323,9 +323,12 @@ h5{
 }
 @media all and (max-width:1024px){
   .circleArea,
-  .txtArea,
-  .careerSlide{
+  .txtArea{
     width: 70%;
+    margin: 0 auto;
+  }
+  .careerSlide{
+    width: 90%;
     margin: 0 auto;
   }
   .circleArea{
