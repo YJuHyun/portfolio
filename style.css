@@ -363,6 +363,9 @@ h5{
   .circleArea{
     margin-bottom: 36px;
   }
+  .designList li{
+    width: 33.3%;
+  }
 }
 @media all and (max-width:768px){
   h1{
@@ -391,7 +394,9 @@ h5{
     left: 50%;
     top: 1480px;
   }
-  
+  .designList li{
+    width: 50%;
+  }
 }
 @media all and (max-width:480px){
   h1{
