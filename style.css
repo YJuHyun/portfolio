@@ -204,6 +204,10 @@ h5{
   left: 0;
   top: 880px;
 }
+.outb{
+  right: 0;
+  top: 1260px;
+}
 .mockup{
   position: relative;
   overflow: hidden;
@@ -274,6 +278,9 @@ h5{
 }
 .blue{
   background-color: #00A8E3;
+}
+.red{
+  background-color: #C10A0A;
 }
 .career img{
   width: 100%;
@@ -363,9 +370,6 @@ h5{
   .circleArea{
     margin-bottom: 36px;
   }
-  .designList li{
-    width: 33.3%;
-  }
 }
 @media all and (max-width:768px){
   h1{
@@ -394,9 +398,7 @@ h5{
     left: 50%;
     top: 1480px;
   }
-  .designList li{
-    width: 50%;
-  }
+  
 }
 @media all and (max-width:480px){
   h1{
