@@ -28,7 +28,7 @@ let worksHeight = () => {
   if (window.innerWidth >= 768) {
     works.style.paddingBottom = website.offsetHeight * 3 + 220 + "px";
   } else {
-    works.style.paddingBottom = website.offsetHeight * 4 + 270 + "px";
+    works.style.paddingBottom = website.offsetHeight * 4 + 470 + "px";
   }
 }
 
