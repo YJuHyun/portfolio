@@ -24,14 +24,6 @@ let listHeight = () => {
   }
 }
 
-let worksHeight = () => {
-  if (window.innerWidth >= 768) {
-    works.style.paddingBottom = website.offsetHeight * 3 + 220 + "px";
-  } else {
-    works.style.paddingBottom = website.offsetHeight * 4 + 470 + "px";
-  }
-}
-
 let wait = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
 let typingHello = async () => {  
@@ -58,12 +50,10 @@ let boxWidth = () => {
 }
 
 circleWidth()
-worksHeight()
 listHeight()
 
 window.addEventListener("resize",()=>{
   circleWidth()
-  worksHeight()
   boxWidth()
   listHeight()
 })

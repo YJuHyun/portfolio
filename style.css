@@ -164,7 +164,10 @@ section section{
 }
 .works{
   position: relative;
+  height: 2000px;
+  align-items: flex-start;
 }
+
 .website{
   width: 38.963210702%;
   text-align: left;
@@ -377,6 +380,9 @@ h5{
   }
   .box{
     height: 60px;
+  }
+  .works{
+    height: 2800px;
   }
   .website{
     width: 95%;
