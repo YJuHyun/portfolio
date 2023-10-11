@@ -1,8 +1,9 @@
 let hello = document.querySelector(".helloTxt");
 let $name = document.querySelector(".nameTxt");
 let box = document.querySelector(".box");
-let circleArea = document.querySelector(".circleArea");
 let circle = document.querySelector(".circle");
+let circleArea = document.querySelector(".circleArea");
+let scrollE = document.querySelector(".scrollE");
 let works = document.querySelector(".works");
 let website = document.querySelector(".website");
 let designList = document.querySelectorAll(".designList li");
@@ -53,6 +54,10 @@ let boxWidth = () => {
   box.style.width = boxTxtWidth + "px"
 }
 
+let scrollFade = () => {
+  scrollE.classList.add('fade')
+}
+
 circleWidth()
 listHeight()
 
@@ -66,7 +71,7 @@ window.addEventListener("resize",()=>{
 setTimeout(typingHello, 1000);
 setTimeout(boxWidth, 2500);
 setTimeout(typingName, 3000);
-setTimeout()
+setTimeout(scrollFade, 5500);
 
 let swiper1 = new Swiper('.dreamSlide',{
   slidesPerView: 1,
