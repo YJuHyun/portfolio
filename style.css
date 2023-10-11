@@ -32,6 +32,9 @@ h2{
   margin-top: 200px;
 }
 
+.hidden::after {
+  display: none;
+}
 .nameTxt{
   display: none;
 }
