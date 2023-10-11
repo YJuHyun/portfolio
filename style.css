@@ -66,7 +66,46 @@ h1{
   top: 0;
   z-index: -1;
 }
+.scrollE{
+  font-size: 0;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 85vh;
+  border: 5px solid #fff;
+  border-radius: 25px;
+  width: 50px;
+  height: 80px;
+  opacity: 0;
+  transition-duration: 0.3s;
+}
+.scrollE.fade{
+  top: 80vh;
+  opacity: 1;
+}
+.scrollE::before{
+  position: absolute;
+  content: '';
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 5px;
+  height: 10px;
+  width: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+  animation: scroll 1.3s infinite;
+}
 
+@keyframes scroll{
+  80%{
+    opacity: 0.5;
+  }
+  100%{
+    transform: translateY(50px);
+    opacity: 0;
+  }
+}
 .portfolio{
   width: 100%;
   background-color: #fff;
