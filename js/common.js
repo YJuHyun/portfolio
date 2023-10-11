@@ -34,7 +34,11 @@ let typingHello = async () => {
   }
 }
 
-let typingName = async () => {  
+
+
+let typingName = async () => { 
+  hello.classList.add('hidden');
+  
   $name.style.display = "block"
   await wait(1000);
   while (j < nameTxt.length) {
@@ -59,10 +63,10 @@ window.addEventListener("resize",()=>{
 })
 
 
-
 setTimeout(typingHello, 1000);
 setTimeout(boxWidth, 2500);
 setTimeout(typingName, 3000);
+setTimeout()
 
 let swiper1 = new Swiper('.dreamSlide',{
   slidesPerView: 1,
