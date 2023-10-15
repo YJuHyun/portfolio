@@ -415,6 +415,9 @@ h5{
   .circleArea{
     margin-bottom: 36px;
   }
+  .txtArea .mainList li ul li{
+    line-height: 1.8;
+  }
 }
 @media all and (max-width:768px){
   h1{
